@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Custom Core Stylesheet -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css?v=1.3">
 </head>
 <body>
 
@@ -174,8 +174,11 @@
           </p>
           <div class="cap-item">
             <div class="cap-item-header">
-              <span>OIL & FUEL RESISTANCE (NITRILE/NBR)</span>
-              <span>95%</span>
+              <span class="cap-title-wrapper">
+                <i class="fa-solid fa-oil-can cap-icon"></i>
+                <span>OIL & FUEL RESISTANCE (NITRILE/NBR)</span>
+              </span>
+              <span class="cap-percentage">95%</span>
             </div>
             <div class="cap-bar-bg">
               <div class="cap-bar-fill" style="width: 95%;"></div>
@@ -183,8 +186,11 @@
           </div>
           <div class="cap-item">
             <div class="cap-item-header">
-              <span>OUTDOOR WEATHERING & OZONE (EPDM)</span>
-              <span>90%</span>
+              <span class="cap-title-wrapper">
+                <i class="fa-solid fa-cloud-sun cap-icon"></i>
+                <span>OUTDOOR WEATHERING & OZONE (EPDM)</span>
+              </span>
+              <span class="cap-percentage">90%</span>
             </div>
             <div class="cap-bar-bg">
               <div class="cap-bar-fill" style="width: 90%;"></div>
@@ -192,8 +198,11 @@
           </div>
           <div class="cap-item">
             <div class="cap-item-header">
-              <span>THERMAL RANGE STABILITY (SILICONE)</span>
-              <span>85%</span>
+              <span class="cap-title-wrapper">
+                <i class="fa-solid fa-temperature-high cap-icon"></i>
+                <span>THERMAL RANGE STABILITY (SILICONE)</span>
+              </span>
+              <span class="cap-percentage">85%</span>
             </div>
             <div class="cap-bar-bg">
               <div class="cap-bar-fill" style="width: 85%;"></div>
@@ -202,7 +211,9 @@
         </div>
         
         <div class="cap-visual glass-panel">
-          <h3 style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 20px; color: var(--accent-blue); text-transform: uppercase;">Material Applications</h3>
+          <h3 style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 20px; color: var(--accent-blue); text-transform: uppercase; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-chart-simple"></i> Material Applications
+          </h3>
           <div class="specs-table-wrap">
             <table class="specs-table">
               <thead>
@@ -214,29 +225,79 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>EPDM</td>
-                  <td>Nordel</td>
-                  <td>Outstanding weather & ozone resistance</td>
+                  <td data-label="Polymer">
+                    <span class="polymer-badge">
+                      <i class="fa-solid fa-cloud-sun" style="color: #0284c7;"></i>
+                      EPDM
+                    </span>
+                  </td>
+                  <td data-label="Trade Name"><span class="trade-name">Nordel</span></td>
+                  <td data-label="Key Feature">
+                    <span class="key-feature">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Outstanding weather & ozone resistance
+                    </span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Nitrile (NBR)</td>
-                  <td>Hycar</td>
-                  <td>Excellent resistance to petroleum oils</td>
+                  <td data-label="Polymer">
+                    <span class="polymer-badge">
+                      <i class="fa-solid fa-oil-can" style="color: #059669;"></i>
+                      Nitrile (NBR)
+                    </span>
+                  </td>
+                  <td data-label="Trade Name"><span class="trade-name">Hycar</span></td>
+                  <td data-label="Key Feature">
+                    <span class="key-feature">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Excellent resistance to petroleum oils
+                    </span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Neoprene (CR)</td>
-                  <td>Neoprene</td>
-                  <td>Flame retardant and good general durability</td>
+                  <td data-label="Polymer">
+                    <span class="polymer-badge">
+                      <i class="fa-solid fa-shield-halved" style="color: #dc2626;"></i>
+                      Neoprene (CR)
+                    </span>
+                  </td>
+                  <td data-label="Trade Name"><span class="trade-name">Neoprene</span></td>
+                  <td data-label="Key Feature">
+                    <span class="key-feature">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Flame retardant and good general durability
+                    </span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Silicone</td>
-                  <td>Silastic</td>
-                  <td>Extreme low & high temperature stability</td>
+                  <td data-label="Polymer">
+                    <span class="polymer-badge">
+                      <i class="fa-solid fa-temperature-high" style="color: #ea580c;"></i>
+                      Silicone
+                    </span>
+                  </td>
+                  <td data-label="Trade Name"><span class="trade-name">Silastic</span></td>
+                  <td data-label="Key Feature">
+                    <span class="key-feature">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Extreme low & high temperature stability
+                    </span>
+                  </td>
                 </tr>
                 <tr>
-                  <td>PTFE</td>
-                  <td>Teflon</td>
-                  <td>Near-total chemical inertness</td>
+                  <td data-label="Polymer">
+                    <span class="polymer-badge">
+                      <i class="fa-solid fa-flask" style="color: #7c3aed;"></i>
+                      PTFE
+                    </span>
+                  </td>
+                  <td data-label="Trade Name"><span class="trade-name">Teflon</span></td>
+                  <td data-label="Key Feature">
+                    <span class="key-feature">
+                      <i class="fa-solid fa-circle-check"></i>
+                      Near-total chemical inertness
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>
